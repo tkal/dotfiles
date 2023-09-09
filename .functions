@@ -1,0 +1,7 @@
+HTTP_Server() {	ifconfig  | grep -w inet | awk '{print $2}'; python /opt/SimpleHTTPServerWithUpload.py $1 }
+randpw(){ < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-16};echo;}
+
+get-domains() {subfinder -all -d $DOMAIN  -o $(echo $DOMAIN|tr "." "_")-subfinder.txt}
+get-urls() {gau $DOMAIN| tee -a $(echo $DOMAIN-|tr "." "_")gau.txt}
+
+

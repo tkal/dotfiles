@@ -1,0 +1,8 @@
+alias ip="ip --color=auto"
+alias simpleHTTPServer=HTTP_Server
+alias xcp="xclip -selection clipboard"
+alias pc="proxychains4"
+alias pc1081="proxychains -f /etc/proxychains4-1081.conf"
+alias hgrep="history -E | grep "
+
+ unalias gau gap
