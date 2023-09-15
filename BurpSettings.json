@@ -103,7 +103,7 @@
             },
             "automatic_project_backup":{
                 "delete_on_shutdown":true,
-                "enabled":true,
+                "enabled":false,
                 "in_scope_only":false,
                 "interval":30,
                 "show_progress":true
